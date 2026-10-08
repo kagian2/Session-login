@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "session-login",
+  "version": "${version}",
+  "name": "Session-login",
+  "description": "Log into any of your Minecraft accounts instantly using a saved token - no relaunching required.",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "dev.kagian.client.SessionLoginClient"
+    ],
+    "main": [
+      "dev.kagian.SessionMod"
+    ]
+  },
+  "mixins": [
+    "session-login.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": ">=1.21"
+  }
+}

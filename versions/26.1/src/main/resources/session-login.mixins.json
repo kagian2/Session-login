@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "dev.kagian.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MultiplayerScreenMixin",
+    "MinecraftClientAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
